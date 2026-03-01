@@ -1,0 +1,56 @@
+[
+  {
+    "base_material": "DC04",
+    "weld_process": "MIG",
+    "haz_yield_factor": 0.85,
+    "haz_uts_factor": 0.90,
+    "haz_width": 3.0,
+    "filler_yield": 350,
+    "filler_uts": 430
+  },
+  {
+    "base_material": "DP600",
+    "weld_process": "MIG",
+    "haz_yield_factor": 0.75,
+    "haz_uts_factor": 0.80,
+    "haz_width": 4.0,
+    "filler_yield": 420,
+    "filler_uts": 530
+  },
+  {
+    "base_material": "DP780",
+    "weld_process": "MIG",
+    "haz_yield_factor": 0.70,
+    "haz_uts_factor": 0.75,
+    "haz_width": 4.5,
+    "filler_yield": 470,
+    "filler_uts": 580
+  },
+  {
+    "base_material": "S355J2",
+    "weld_process": "MIG",
+    "haz_yield_factor": 0.90,
+    "haz_uts_factor": 0.95,
+    "haz_width": 3.0,
+    "filler_yield": 380,
+    "filler_uts": 470
+  },
+  {
+    "base_material": "6061-T6",
+    "weld_process": "TIG",
+    "haz_yield_factor": 0.50,
+    "haz_uts_factor": 0.60,
+    "haz_width": 6.0,
+    "filler_yield": 130,
+    "filler_uts": 190
+  },
+  {
+    "base_material": "5083-H111",
+    "weld_process": "MIG",
+    "haz_yield_factor": 0.85,
+    "haz_uts_factor": 0.90,
+    "haz_width": 5.0,
+    "filler_yield": 165,
+    "filler_uts": 275
+  }
+]

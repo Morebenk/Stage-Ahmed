@@ -17,4 +17,4 @@ env/
 *.log
 .ipynb_checkpoints/
 .streamlit/
-plan_raw.txt
+.claude/

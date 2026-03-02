@@ -1,0 +1,26 @@
+{
+    "description": "ISO 5817:2023 quality levels and FAT class mapping",
+    "quality_levels": ["B", "C", "D"],
+    "fat_class_mapping": {
+        "B": {"butt": 112, "fillet": 90, "cruciform": 80, "t_joint": 80, "lap": 71},
+        "C": {"butt": 90, "fillet": 71, "cruciform": 63, "t_joint": 63, "lap": 56},
+        "D": {"butt": 71, "fillet": 56, "cruciform": 50, "t_joint": 50, "lap": 45}
+    },
+    "imperfection_limits": {
+        "undercut": {
+            "B": {"max_depth_fraction": 0.05, "max_depth_mm": 0.5},
+            "C": {"max_depth_fraction": 0.10, "max_depth_mm": 1.0},
+            "D": {"max_depth_fraction": 0.20, "max_depth_mm": 2.0}
+        },
+        "porosity": {
+            "B": {"max_area_fraction": 0.01},
+            "C": {"max_area_fraction": 0.02},
+            "D": {"max_area_fraction": 0.05}
+        },
+        "misalignment_axial": {
+            "B": {"max_fraction": 0.10},
+            "C": {"max_fraction": 0.15},
+            "D": {"max_fraction": 0.25}
+        }
+    }
+}

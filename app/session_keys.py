@@ -1,8 +1,21 @@
 """Session state key constants for cross-page data flow."""
 
-# Written by page 02 (Fatigue Analysis)
+# Written by page 02 — Standard mode (Fatigue Analysis)
 FATIGUE_RESULT = "fatigue_result"
 FATIGUE_LAST_MEAN_STRESS = "fatigue_last_mean_stress"
+
+# Written by page 02 — Multiaxial mode
+MULTIAXIAL_RESULT = "multiaxial_result"
+
+# Written by page 02 — Fracture Mechanics mode
+FM_RESULT = "fm_result"
+
+# Written by page 02 — Vibration Fatigue mode
+VIB_FATIGUE_RESULT = "vib_fatigue_result"
+
+# Written by page 02 — Weld Quality tab
+WQ_RESULT = "wq_result"
+WQ_IMPERFECTIONS = "wq_imperfections"
 
 # Written by page 03 (Shock Analysis)
 SHOCK_RESULT = "shock_result"

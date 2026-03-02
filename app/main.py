@@ -101,9 +101,15 @@ def main():
     # ── Standards & applications (collapsible) ────────────────────────────
     with st.expander(t("applicable_standards")):
         st.markdown(
-            "- **IIW Recommendations XIII-1823-07** (Fatigue Design of Welded Joints)\n"
-            "- **EN 1993-1-8** (Eurocode 3 - Weld Design)\n"
-            "- **ASTM E1049-85** (Rainflow Cycle Counting)"
+            "- **IIW Recommendations XIII-1823-07 / XIII-2572-15** "
+            "(Fatigue Design of Welded Joints, 3rd ed. 2024)\n"
+            "- **EN 1993-1-8 / EN 1993-1-9** (Eurocode 3 \u2014 "
+            "Weld Design & Fatigue)\n"
+            "- **EN 1999-1-3** (Eurocode 9 \u2014 Aluminum Fatigue)\n"
+            "- **BS 7608:2014** (Fatigue Design of Steel Structures)\n"
+            "- **ISO 5817:2023** (Welding Imperfection Quality Levels)\n"
+            "- **ASTM E1049-85** (Rainflow Cycle Counting)\n"
+            "- **BS 7910** (Fracture Mechanics \u2014 Flaw Assessment)"
         )
 
     with st.expander(t("target_applications")):

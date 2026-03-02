@@ -59,8 +59,8 @@ TRANSLATIONS: dict[str, dict[str, str]] = {
         "fr": "Parcourir et comparer les nuances d'acier et d'aluminium automobiles",
     },
     "mod_fatigue": {
-        "en": "IIW Nominal, Hot-Spot, and Notch Stress methods",
-        "fr": "Méthodes IIW : Nominal Stress, Hot-Spot Stress et Notch Stress",
+        "en": "IIW methods, multiaxial, fracture mechanics, vibration fatigue, weld quality",
+        "fr": "Méthodes IIW, multiaxial, mécanique de la rupture, fatigue vibratoire, qualité de soudure",
     },
     "mod_shock": {
         "en": "Dynamic material properties and weld failure criteria",
@@ -1438,6 +1438,352 @@ TRANSLATIONS: dict[str, dict[str, str]] = {
     "slope_m2": {"en": "Slope m₂ (extended life)", "fr": "Pente m₂ (vie prolongée)"},
     "knee_cycles": {"en": "Knee point cycles", "fr": "Cycles au point de coude"},
     "cutoff_cycles": {"en": "Cut-off cycles", "fr": "Cycles de coupure"},
+
+    # ── Analysis Modes (Fatigue page) ─────────────────────────────────────
+    "analysis_mode": {
+        "en": "Analysis Mode",
+        "fr": "Mode d'analyse",
+    },
+    "mode_standard": {
+        "en": "Standard (IIW)",
+        "fr": "Standard (IIW)",
+    },
+    "mode_multiaxial": {
+        "en": "Multiaxial",
+        "fr": "Multiaxial",
+    },
+    "mode_fracture": {
+        "en": "Fracture Mechanics",
+        "fr": "Mécanique de la rupture",
+    },
+    "mode_vibration": {
+        "en": "Vibration Fatigue",
+        "fr": "Fatigue vibratoire",
+    },
+
+    # ── Multiaxial Assessment ─────────────────────────────────────────────
+    "multiaxial_params": {
+        "en": "Multiaxial Parameters",
+        "fr": "Paramètres multiaxiaux",
+    },
+    "multiaxial_desc": {
+        "en": "Assess fatigue under combined normal and shear loading using "
+              "IIW multiaxial methods (Gough-Pollard, Findley, MWCM).",
+        "fr": "Évaluer la fatigue sous chargement combiné normal et cisaillement "
+              "par les méthodes multiaxiales IIW (Gough-Pollard, Findley, MWCM).",
+    },
+    "loading": {
+        "en": "Loading",
+        "fr": "Chargement",
+    },
+    "method_info": {
+        "en": "Method Information",
+        "fr": "Informations sur la méthode",
+    },
+    "normal_stress_range": {
+        "en": "Normal Stress Range (MPa)",
+        "fr": "Étendue de contrainte normale (MPa)",
+    },
+    "normal_stress_range_help": {
+        "en": "Peak-to-peak normal (axial/bending) stress range.",
+        "fr": "Étendue de contrainte normale (axiale/flexion) crête à crête.",
+    },
+    "shear_stress_range": {
+        "en": "Shear Stress Range (MPa)",
+        "fr": "Étendue de contrainte de cisaillement (MPa)",
+    },
+    "shear_stress_range_help": {
+        "en": "Peak-to-peak shear stress range.",
+        "fr": "Étendue de contrainte de cisaillement crête à crête.",
+    },
+    "interaction_diagram": {
+        "en": "Interaction Diagram",
+        "fr": "Diagramme d'interaction",
+    },
+    "interaction_envelope": {
+        "en": "Interaction Envelope",
+        "fr": "Enveloppe d'interaction",
+    },
+    "operating_point": {
+        "en": "Operating Point",
+        "fr": "Point de fonctionnement",
+    },
+    "detailed_results": {
+        "en": "Detailed Results",
+        "fr": "Résultats détaillés",
+    },
+    "results": {
+        "en": "Results",
+        "fr": "Résultats",
+    },
+
+    # ── Fracture Mechanics ────────────────────────────────────────────────
+    "crack_growth_params": {
+        "en": "Crack Growth Parameters",
+        "fr": "Paramètres de propagation de fissure",
+    },
+    "fracture_desc": {
+        "en": "Paris law fatigue crack propagation analysis (IIW 4th method). "
+              "Integrates crack growth from initial flaw size to critical size.",
+        "fr": "Analyse de propagation de fissure par la loi de Paris (4ᵉ méthode IIW). "
+              "Intègre la croissance de fissure de la taille initiale au défaut critique.",
+    },
+    "environment": {
+        "en": "Environment",
+        "fr": "Environnement",
+    },
+    "weld_geometry": {
+        "en": "Weld Geometry",
+        "fr": "Géométrie de soudure",
+    },
+    "geometry_loading": {
+        "en": "Geometry & Loading",
+        "fr": "Géométrie et chargement",
+    },
+    "initial_conditions": {
+        "en": "Initial Conditions",
+        "fr": "Conditions initiales",
+    },
+    "initial_crack_help": {
+        "en": "Initial flaw depth detected or assumed.",
+        "fr": "Profondeur de défaut initial détecté ou supposé.",
+    },
+    "critical_crack_help": {
+        "en": "Crack size at which failure / instability occurs.",
+        "fr": "Taille de fissure à laquelle la rupture / instabilité survient.",
+    },
+    "plate_thickness": {
+        "en": "Plate Thickness",
+        "fr": "Épaisseur de plaque",
+    },
+    "below_threshold_warning": {
+        "en": "Initial ΔK is below threshold — no crack growth expected.",
+        "fr": "ΔK initial en dessous du seuil — aucune propagation attendue.",
+    },
+    "crack_grows_critical": {
+        "en": "CRACK GROWS TO CRITICAL SIZE",
+        "fr": "FISSURE ATTEINT LA TAILLE CRITIQUE",
+    },
+    "crack_arrested": {
+        "en": "CRACK ARRESTED (below threshold)",
+        "fr": "FISSURE ARRÊTÉE (sous le seuil)",
+    },
+    "propagation_life": {
+        "en": "Propagation Life (cycles)",
+        "fr": "Durée de vie en propagation (cycles)",
+    },
+    "crack_growth_curve": {
+        "en": "Crack Growth Curve",
+        "fr": "Courbe de propagation de fissure",
+    },
+
+    # ── Vibration Fatigue ─────────────────────────────────────────────────
+    "vibration_params": {
+        "en": "Vibration Fatigue Parameters",
+        "fr": "Paramètres de fatigue vibratoire",
+    },
+    "vibration_desc": {
+        "en": "Frequency-domain fatigue analysis from Power Spectral Density (PSD) input. "
+              "Computes Palmgren-Miner damage using Dirlik, narrow-band, and Wirsching-Light methods.",
+        "fr": "Analyse de fatigue fréquentielle à partir de la densité spectrale de puissance (PSD). "
+              "Calcule le dommage Palmgren-Miner par les méthodes Dirlik, bande étroite et Wirsching-Light.",
+    },
+    "duration_seconds": {
+        "en": "Duration (seconds)",
+        "fr": "Durée (secondes)",
+    },
+    "duration_help": {
+        "en": "Total exposure duration in seconds.",
+        "fr": "Durée totale d'exposition en secondes.",
+    },
+    "psd_input_mode": {
+        "en": "PSD Input Mode",
+        "fr": "Mode d'entrée PSD",
+    },
+    "psd_example": {
+        "en": "Example PSD",
+        "fr": "PSD exemple",
+    },
+    "psd_manual": {
+        "en": "Manual Entry",
+        "fr": "Saisie manuelle",
+    },
+    "psd_csv": {
+        "en": "CSV Upload",
+        "fr": "Import CSV",
+    },
+    "psd_example_info": {
+        "en": "Using a flat PSD of 1.0 MPa²/Hz between 5 Hz and 500 Hz as a demonstration.",
+        "fr": "Utilisation d'une PSD plate de 1.0 MPa²/Hz entre 5 Hz et 500 Hz en démonstration.",
+    },
+    "psd_manual_info": {
+        "en": "Enter frequency and PSD values as comma-separated lines: `frequency, PSD_value`",
+        "fr": "Entrez les valeurs fréquence et PSD séparées par des virgules : `fréquence, valeur_PSD`",
+    },
+    "psd_manual_label": {
+        "en": "Frequency, PSD (one pair per line)",
+        "fr": "Fréquence, PSD (une paire par ligne)",
+    },
+    "psd_need_points": {
+        "en": "Need at least 2 data points.",
+        "fr": "Au moins 2 points de données requis.",
+    },
+    "psd_parse_error": {
+        "en": "Could not parse input. Use format: `frequency, PSD_value`",
+        "fr": "Impossible de parser l'entrée. Utilisez le format : `fréquence, valeur_PSD`",
+    },
+    "psd_csv_upload": {
+        "en": "Upload CSV (columns: frequency, PSD)",
+        "fr": "Import CSV (colonnes : fréquence, PSD)",
+    },
+    "psd_csv_error": {
+        "en": "CSV must have at least 2 columns (frequency, PSD).",
+        "fr": "Le CSV doit avoir au moins 2 colonnes (fréquence, PSD).",
+    },
+    "psd_provide_input": {
+        "en": "Provide PSD input data above, then run the assessment.",
+        "fr": "Fournissez les données PSD ci-dessus, puis lancez l'évaluation.",
+    },
+    "psd_input_title": {
+        "en": "Input Power Spectral Density",
+        "fr": "Densité spectrale de puissance (entrée)",
+    },
+    "psd_freq_axis": {
+        "en": "Frequency (Hz)",
+        "fr": "Fréquence (Hz)",
+    },
+    "psd_value_axis": {
+        "en": "PSD (MPa²/Hz)",
+        "fr": "PSD (MPa²/Hz)",
+    },
+    "equivalent_stress": {
+        "en": "Equivalent Stress (MPa)",
+        "fr": "Contrainte équivalente (MPa)",
+    },
+    "peak_rate": {
+        "en": "Expected Peak Rate (Hz)",
+        "fr": "Taux de pics attendu (Hz)",
+    },
+    "irregularity_factor": {
+        "en": "Irregularity Factor",
+        "fr": "Facteur d'irrégularité",
+    },
+    "spectral_moments": {
+        "en": "Spectral Moments & Bandwidth",
+        "fr": "Moments spectraux et bande passante",
+    },
+    "damage_comparison": {
+        "en": "Damage Comparison",
+        "fr": "Comparaison des dommages",
+    },
+    "damage_by_method": {
+        "en": "Damage Estimates by Method",
+        "fr": "Estimations de dommage par méthode",
+    },
+
+    # ── Weld Quality (ISO 5817) ───────────────────────────────────────────
+    "weld_quality_tab": {
+        "en": "Weld Quality",
+        "fr": "Qualité de soudure",
+    },
+    "weld_quality_desc": {
+        "en": "Evaluate weld imperfections against ISO 5817:2023 quality levels (B, C, D), "
+              "compute misalignment stress magnification factors (km), and determine "
+              "the quality-adjusted FAT class.",
+        "fr": "Évaluer les imperfections de soudure selon les niveaux de qualité ISO 5817:2023 (B, C, D), "
+              "calculer les facteurs de majoration de contrainte par mésalignement (km) et déterminer "
+              "la classe FAT ajustée en qualité.",
+    },
+    "quality_level": {
+        "en": "ISO 5817 Quality Level",
+        "fr": "Niveau de qualité ISO 5817",
+    },
+    "quality_level_help": {
+        "en": "B = stringent (highest quality), D = moderate (lowest quality).",
+        "fr": "B = strict (qualité maximale), D = modéré (qualité minimale).",
+    },
+    "weld_type_wq": {
+        "en": "Weld Type",
+        "fr": "Type de soudure",
+    },
+    "end_restraint": {
+        "en": "End Restraint",
+        "fr": "Condition d'appui",
+    },
+    "geometry_misalignment": {
+        "en": "Geometry & Misalignment",
+        "fr": "Géométrie et mésalignement",
+    },
+    "joint_length": {
+        "en": "Joint Length",
+        "fr": "Longueur du joint",
+    },
+    "axial_misalignment": {
+        "en": "Axial Misalignment",
+        "fr": "Mésalignement axial",
+    },
+    "angular_misalignment": {
+        "en": "Angular Misalignment",
+        "fr": "Mésalignement angulaire",
+    },
+    "imperfection_checks": {
+        "en": "Imperfection Checks (ISO 5817)",
+        "fr": "Vérification des imperfections (ISO 5817)",
+    },
+    "imperfection_intro": {
+        "en": "Enter measured imperfection values. They will be compared against "
+              "the limits for quality level **{ql}**.",
+        "fr": "Entrez les valeurs d'imperfection mesurées. Elles seront comparées "
+              "aux limites du niveau de qualité **{ql}**.",
+    },
+    "undercut_depth": {
+        "en": "Undercut Depth",
+        "fr": "Profondeur de caniveau",
+    },
+    "porosity_area": {
+        "en": "Porosity Area",
+        "fr": "Surface de porosité",
+    },
+    "excess_weld_metal": {
+        "en": "Excess Weld Metal Height",
+        "fr": "Hauteur de surépaisseur de soudure",
+    },
+    "incomplete_penetration": {
+        "en": "Incomplete Penetration Depth",
+        "fr": "Profondeur de pénétration incomplète",
+    },
+    "axial_mis_check": {
+        "en": "Axial Misalignment (check)",
+        "fr": "Mésalignement axial (vérification)",
+    },
+    "km_factors": {
+        "en": "Misalignment Stress Magnification Factors",
+        "fr": "Facteurs de majoration de contrainte par mésalignement",
+    },
+    "effective_fat_km": {
+        "en": "Effective FAT (km-adjusted)",
+        "fr": "FAT effectif (ajusté km)",
+    },
+    "imperfection_results": {
+        "en": "Imperfection Check Results",
+        "fr": "Résultats des vérifications d'imperfection",
+    },
+    "all_checks_pass": {
+        "en": "ALL CHECKS PASS",
+        "fr": "TOUTES LES VÉRIFICATIONS RÉUSSIES",
+    },
+    "some_checks_fail": {
+        "en": "SOME CHECKS FAIL",
+        "fr": "CERTAINES VÉRIFICATIONS ÉCHOUENT",
+    },
+    "quality_comparison": {
+        "en": "Quality Level Comparison",
+        "fr": "Comparaison des niveaux de qualité",
+    },
+    "fat_by_quality_level": {
+        "en": "FAT Class by Quality Level",
+        "fr": "Classe FAT par niveau de qualité",
+    },
 }
 
 

@@ -1,0 +1,15 @@
+__pycache__
+*.pyc
+*.pyo
+.git
+.claude
+.ruff_cache
+.pytest_cache
+*.egg-info
+dist
+build
+notebooks
+tests
+docs
+*.md
+.gitignore

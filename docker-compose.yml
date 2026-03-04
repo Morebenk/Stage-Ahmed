@@ -1,0 +1,9 @@
+services:
+  weldfatigue:
+    build: .
+    ports:
+      - "8501:8501"
+    volumes:
+      - ./app:/app/app
+      - ./src:/app/src
+    restart: unless-stopped

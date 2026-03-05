@@ -9,6 +9,9 @@
 #   python3 --version
 #   python3.12 -m pip install -r requirements.txt
 
+# Install local weldfatigue package
+.
+
 # Core dependencies
 numpy>=1.26,<3.0
 scipy>=1.12,<2.0
